@@ -1,0 +1,99 @@
+*{
+   margin:0;
+   padding:0;
+ }
+body{
+   color: #ffffff;
+   background: rgb(2,0,36);
+   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,17,51,1) 32%, rgba(1,85,108,1) 58%, rgba(0,255,121,1) 100%);
+}
+.App {
+   text-align: center;
+}
+#navegador{
+   display:flex;
+   justify-content: end;
+   margin: auto;
+   background: rgb(2,0,36);
+   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,17,51,1) 32%, rgba(1,85,108,1) 58%, rgba(0,255,121,1) 100%);
+   box-shadow:
+   inset 0 -3em 3em rgba(0,0,0,0.1),
+         0.3em 0.3em 1em rgba(0,0,0,0.3);
+   padding: 20px;
+}
+.cards{
+      display: grid;
+      grid-template-columns: repeat(6,1fr);
+      margin: 25px;
+      font-family: fantasy;
+      color:black;
+      font-weight: bold;
+      font-size: 12px;
+      padding: 20px;
+      text-shadow: #529826;
+}
+.cardClass{
+   background-image: url("https://wallpaperaccess.com/full/3958025.jpg");
+   border-radius:  10px;
+   padding: 10px;
+   width: 200px;
+   margin-bottom: 50px;
+}
+.cardClass:hover{
+   box-shadow:
+   inset 0 -3em 3em rgba(0,0,0,0.1),
+         0 0  0 2px rgb(255,255,255),
+         0.3em 0.3em 1em rgba(0,0,0,0.3);
+   transition-duration: 0.2s ;
+}
+#input-search{
+   height: 25px;
+   margin-right: 0.5rem;
+   background: white;
+   border: 1px solid #ffffff;
+   border-radius: 5px;
+   padding: 5px;
+   outline: 0;  
+}
+.btn-search{
+   background-color:darkgreen;
+   width: 60px;
+   border-radius: 5px;
+   color: #ffffff;
+   height: 25px;
+   border: none;
+   margin: 10px;
+}
+.btn-out{
+   background-color:darkred;
+   width: 60px;
+   border-radius: 5px;
+   color: #ffffff;
+   height: 25px;
+   border: none;
+   margin: 10px;
+}
+.btn-out:hover{
+   background-color:white;
+   color: black;
+   transition-duration: 0.3s;
+}
+.btn-search:hover{
+   background-color:white;
+   color: black;
+   transition-duration: 0.3s;
+}
+.btn-card{
+   font-family:'Courier New', Courier, monospace;
+   width: 30px;
+   height: 20px;
+   border-radius: 10%;
+   border-width: 1px;
+}
+.btn-card:hover{
+   color: black;
+   transition-duration: 0.3s;
+}
+.img-card{
+   width: 100%;
+}
