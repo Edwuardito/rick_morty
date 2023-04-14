@@ -5,10 +5,10 @@ import validation from './validation'
 export default function Form({login}){
     const [userData,setUserData] = useState({
         email:'',
-        password:''
+        password:'' 
     })
-    
 
+        
     const [errors,setErrors] = useState({})
 
     const handleChange = (event)=>{

@@ -55,7 +55,7 @@ const mapDispatchToProps = (dispatch) => {
       removeFav:(id)=> dispatch(removeFav(id))
    }
 }
-
+   
 export default connect(
    mapStateToProps,
    mapDispatchToProps
