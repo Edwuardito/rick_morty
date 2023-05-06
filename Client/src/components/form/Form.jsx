@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import validation from './validation'
+import ReactPlayer from 'react-player'
 
 
 export default function Form({login}){
@@ -23,15 +24,17 @@ export default function Form({login}){
     }
    return(
     <>
-        <form onSubmit={handleSubmit}>
-            <label htmlFor="email">Email</label>
-            <input type="email" name='email' value={userData.email} onChange={handleChange}></input>
+    <div className='divForm'>
+    <form className='form' onSubmit={handleSubmit}>
+            <label className='label' htmlFor="email">Email</label>
+            <input className='imput' type="email" name='email' value={userData.email} onChange={handleChange}></input>
             <p>{errors.email}</p>
-            <label html="password">Password</label>
-            <input type="password" name='password' value={userData.password} onChange={handleChange}></input>
+            <label className='label' html="password">Password</label>
+            <input className='imput' type="password" name='password' value={userData.password} onChange={handleChange}></input>
             <p>{errors.password}</p>
-            <button >Submit</button>
+            <button className='button'>Submit</button>
         </form>
+    </div>     
     </>
    ) 
 }
